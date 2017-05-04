@@ -5,13 +5,13 @@ bool isMinHeap(vector<int> numbers, int current)
     int left = current*2 + 1;
     int right = current*2 + 2;
 
-    if(current >= numbers.size())
+    if(current >= (int)numbers.size())
         return true;
 
-    if(left<numbers.size() && numbers[current]>numbers[left])
+    if(left<(int)numbers.size() && numbers[current]>numbers[left])
         return false;
 
-    if(right<numbers.size() && numbers[current]>numbers[right])
+    if(right<(int)numbers.size() && numbers[current]>numbers[right])
         return false;
 
     return isMinHeap(numbers, left) && isMinHeap(numbers, right);
@@ -19,10 +19,10 @@ bool isMinHeap(vector<int> numbers, int current)
 
 bool hasAllValues(vector<int> v1, vector<int> v2)
 {
-    for(int i=0; i<v1.size(); i++)
+    for(int i=0; i<(int)v1.size(); i++)
     {
         bool exists = false;
-        for(int j=0; j<v2.size(); j++)
+        for(int j=0; j<(int)v2.size(); j++)
         {
             if(v1[i]==v2[j])
                 exists = true;
