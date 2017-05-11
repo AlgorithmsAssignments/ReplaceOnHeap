@@ -34,7 +34,7 @@ bool hasAllValues(vector<int> v1, vector<int> v2)
 }
 
 void test()
-{
+{                           // 0,  1,  2,  3,  4,  5,  6,   7
     static const int arr[] = {10, 40, 20, 90, 80, 30, 50, 100};
     vector<int> vec (arr, arr + sizeof(arr) / sizeof(arr[0]) );
     vector<int> vec_changed = vec;
